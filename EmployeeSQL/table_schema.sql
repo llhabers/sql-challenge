@@ -1,5 +1,5 @@
 CREATE TABLE "departments" (
-    "dept_no" VARCHAR   NOT NULL,
+    "dept_no" VARCHAR   UNIQUE NOT NULL,
     "dept_name" VARCHAR   NOT NULL,
     CONSTRAINT "pk_departments" PRIMARY KEY (
         "dept_no"
@@ -7,7 +7,7 @@ CREATE TABLE "departments" (
 );
 
 CREATE TABLE "employees" (
-    "emp_no" VARCHAR   NOT NULL,
+    "emp_no" INT UNIQUE NOT NULL,
     "emp_title_id" VARCHAR   NOT NULL,
     "birth_date" DATE   NOT NULL,
     "first_name" VARCHAR   NOT NULL,
@@ -20,24 +20,35 @@ CREATE TABLE "employees" (
 );
 
 CREATE TABLE "dept_emp" (
-    "emp_no" VARCHAR   NOT NULL,
-    "dept_no" VARCHAR   NOT NULL
+    "emp_no" INT   UNIQUE NOT NULL,
+    "dept_no" VARCHAR   NOT NULL,
+	CONSTRAINT "dept_emp" PRIMARY KEY (
+        "emp_no","dept_no"
+     )
 );
 
 CREATE TABLE "dept_manager" (
-    "emp_no" VARCHAR   NOT NULL,
-    "dept_no" VARCHAR   NOT NULL
+    "emp_no" INT   UNIQUE NOT NULL,
+    "dept_no" VARCHAR   NOT NULL,
+	CONSTRAINT "pk_employees" PRIMARY KEY (
+        "emp_no","dept_no"
+     )
 );
 
 CREATE TABLE "salaries" (
-    "emp_no" VARCHAR   NOT NULL,
+    "emp_no" INT   NOT NULL,
     "salary" INT   NOT NULL
 );
 
 CREATE TABLE "title" (
-    "title" VARCHAR   NOT NULL,
-    "title_id" VARCHAR   NOT NULL
+    "title_id" VARCHAR   NOT NULL,
+    "title" VARCHAR   NOT NULL
 );
+
+Drop table title, departments, dept_manager, dept_emp, employees, salaries;
+
+SELECT *
+From title;
 
 ALTER TABLE "dept_emp" ADD CONSTRAINT "fk_dept_emp_emp_no" FOREIGN KEY("emp_no")
 REFERENCES "employees" ("emp_no");
