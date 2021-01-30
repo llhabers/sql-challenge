@@ -1,6 +1,6 @@
 # Employee Database: A Mystery in Two Parts
 
-![Employee_Database](https://columbia.bootcampcontent.com/columbia-bootcamp/cu-nyc-data-pt-11-2020-u-c/-/raw/master/02-Homework/09-SQL/Instructions/sql.png)
+![Employee_Database](https://github.com/llhabers/sql-challenge/blob/main/EmployeeSQL/employee_database.svg)
 
 ## Situation
 I was task to use my Data Engineering and Analytical skills to research employees of a corporation from the 1980s and 1990s. I was given six CSV files to review, modify and to analyize to explain my findings through coding and visualzations. I decieded to push myself and completed the Epilouge and the bonus assignment. 
