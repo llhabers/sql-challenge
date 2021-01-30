@@ -7,10 +7,14 @@ I was task to use my Data Engineering and Analytical skills to research employee
 
 ## Task
 I decided to break the task down in four sections.
-Creating the ERD and importing the CSVs with primary and foreign keys.
-Using my coding skills to run statisically anaylsis on the datasets
-Completing the epilouge
-Completing the bonus
+<br>
+1. Creating the ERD and importing the CSVs with primary and foreign keys.
+<br>
+2. Using my coding skills to run statisically anaylsis on the datasets.
+<br>
+3. Completing the epilouge.
+<br>
+4. Completing the bonus.
 
 ## Action
 
