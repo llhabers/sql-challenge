@@ -18,6 +18,7 @@ Completing the bonus
 ![ERD_Quick_Database_Diagrams](https://github.com/llhabers/sql-challenge/blob/main/EmployeeSQL/ERD.png)
 
 ### Coding Time: Analysis
+Test
 
 ### Epilouge
 
