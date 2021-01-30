@@ -45,11 +45,6 @@ CREATE TABLE "title" (
     "title" VARCHAR   NOT NULL
 );
 
-Drop table title, departments, dept_manager, dept_emp, employees, salaries;
-
-SELECT *
-From title;
-
 ALTER TABLE "dept_emp" ADD CONSTRAINT "fk_dept_emp_emp_no" FOREIGN KEY("emp_no")
 REFERENCES "employees" ("emp_no");
 
