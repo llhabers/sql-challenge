@@ -62,6 +62,7 @@ I decided to take on the challenge to get a deeper dive of the dataset. From loo
 2. Surprisingly, "Senior Engineers" were the lowest paid employees.
 <br>
 3. The most common salaries were between $40,000 - $50,000.
+
 ## Graphs
 
 ![Average_Employee_Salaries](https://github.com/llhabers/sql-challenge/blob/main/EmployeeSQL/average_salary_by_titles.png)
